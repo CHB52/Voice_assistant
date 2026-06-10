@@ -17,7 +17,7 @@ def init_engine():
 engine = init_engine()
 recognizer = sr.Recognizer()
 
-# ── Speak & Listen ─────────────────────────────────────────────────────────────
+
 
 def speak(text):
     print(f"Assistant: {text}")
@@ -42,7 +42,6 @@ def listen():
             speak("Speech recognition service is unavailable. Check your internet connection.")
             return ""
 
-# ── Commands ───────────────────────────────────────────────────────────────────
 
 def handle_command(command):
     if not command:
@@ -136,7 +135,6 @@ def handle_command(command):
 
     return True
 
-# ── Main Loop ──────────────────────────────────────────────────────────────────
 
 def main():
     speak("Voice assistant is ready. Say hello to get started, or say help to see what I can do.")
